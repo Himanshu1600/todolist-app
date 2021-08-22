@@ -1,0 +1,174 @@
+/* logout functionality  */
+.logout-button {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+}
+.username {
+  position: absolute;
+  top: 15px;
+  left: 43%;
+  color: white;
+}
+.main-div {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  padding-top: 80px;
+  justify-content: center;
+  background-color: rgb(0, 0, 59);
+}
+.sub-div {
+  width: 25%;
+  height: fit-content;
+}
+.sub-div > figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sub-div > figure > img {
+  width: 4vw;
+  filter: invert(100%);
+}
+.sub-div > figure > figcaption {
+  color: #e0e0e0;
+  margin: 12px 0px;
+}
+.addItems {
+  display: flex;
+  align-items: center;
+}
+.addItems > input {
+  width: 100%;
+  outline: none;
+  border: none;
+  padding: 6px 6px;
+  border-radius: 7px;
+  font-size: 1.1rem;
+  color: rgb(116, 116, 116);
+  flex: 1;
+}
+.addItems > input::placeholder {
+  font-size: 1.1rem;
+}
+.add-button {
+  color: grey;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  position: absolute;
+  right: 38%;
+}
+
+.add-button:hover {
+  color: rgb(0, 197, 197);
+}
+.showItems {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 12px;
+}
+.addedItem {
+  width: 100%;
+  background-color: #02c0ce;
+  margin: 4px 0px;
+  display: flex;
+  padding: 6px 6px;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 7px;
+}
+.addedItem:hover {
+  background-color: #ff7d13;
+}
+.addedItem > h3 {
+  color: white;
+  margin-left: 15px;
+}
+.items-functionality {
+  display: flex;
+}
+.edit-button {
+  color: white;
+  display: flex;
+  margin: 0px 2px;
+  align-items: center;
+}
+.edit-button:hover {
+  color: green;
+  cursor: pointer;
+}
+.delete-button {
+  color: white;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.delete-button:hover {
+  color: red;
+}
+.button-section {
+  margin-top: 12px;
+  text-align: center;
+}
+.btn {
+  font-size: 1.2rem;
+  padding: 5px 8px;
+  font-weight: 500;
+  background-color: #00bd9d;
+  border-radius: 10px;
+  border: 1px solid white;
+  color: white;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: transparent;
+  color: red;
+  border: 1px solid red;
+}
+
+/* media query starts from here */
+
+@media (max-width: 900px) {
+  .sub-div {
+    width: 40%;
+  }
+  .add-button {
+    right: 31%;
+  }
+}
+@media (max-width: 600px) {
+  .sub-div {
+    width: 60%;
+  }
+  .add-button {
+    right: 21%;
+  }
+  .sub-div > figure > img {
+    width: 8vw;
+  }
+  .username {
+    left: 33%;
+  }
+}
+@media (max-width: 450px) {
+  .sub-div {
+    width: 80%;
+  }
+  .add-button {
+    right: 11%;
+  }
+  .sub-div > figure > img {
+    width: 11vw;
+  }
+  .username {
+    left: 20px;
+  }
+}
+@media (max-width: 350px) {
+  .username {
+    left: 10px;
+  }
+}
